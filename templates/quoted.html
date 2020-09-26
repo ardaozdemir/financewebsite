@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <div class="col-md-2"></div>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td class="vert-align">{{ name }}</td>
+                <td class="vert-align">{{ symbol }}</td>
+                <td class="vert-align">${{ price }}</td>
+                </td>
+            </tr>
+        </table>
+    <div class="col-md-2"></div>
+{% endblock %}
